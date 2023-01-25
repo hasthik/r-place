@@ -1,0 +1,119 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: poppins , Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    line-height: 1.42857143;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container-1000 {
+    width: 1000px;
+    margin: 0 auto;
+}
+.canvas {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tile {
+    width: 5px;
+    height: 5px;
+    transition: transform .2s; 
+    background: #ffffff;
+}
+.tile:hover {
+    outline: #000000 solid 1px;
+    /* expand animation */
+    transform: scale(1.2);
+}
+.tile::selection {
+    background: #ffffff;
+    outline: #000000 solid 1px;
+}
+.grid :hover {
+    /* expand animation */
+    transform: scale(1.2);
+}
+.colour-picker {
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    bottom : 0;
+    background-color: #ffffff;
+    color: #000000;
+    width: 1000px;
+    padding: 10px;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+    border: solid 1px #9b9b9b;
+    padding: 10px;
+}
+.grid div {
+    height: 50px;
+    border: solid 1px #9b9b9b;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.black {
+    background-color: black;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.white {
+    background-color: white;
+}
+#light-purple {
+    background-color: #b19cd9;
+}
+#light-blue {
+    background-color: #add8e6;
+}
+#light-green {
+    background-color: #90ee90;
+}
+#light-grey {
+    background-color: #d3d3d3;
+}
+#sky-blue {
+    background-color: #87ceeb;
+}
