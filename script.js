@@ -8,14 +8,16 @@ function theBox(row)
     }
     return(output)
 }
+
 var selectedId = ""
 var colour = "black"
 var canvas = document.querySelector(".canvas")
-
-for(var i = 0;i<screen.height;i++)
+var len = screen.height/10
+for(var i = 0;i<len;i++)
 {   
     canvas.innerHTML+=theBox(i+1)
 }  
+
 
 function displayPallete()
 {
