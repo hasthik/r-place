@@ -12,8 +12,7 @@ function theBox(row)
 var selectedId = ""
 var colour = "black"
 var canvas = document.querySelector(".canvas")
-var len = screen.height/8
-for(var i = 0;i<len;i++)
+for(var i = 0;i<150;i++)
 {   
     canvas.innerHTML+=theBox(i+1)
 }  
